@@ -12,7 +12,7 @@ google.js | Configures the Google strategy for use by Passport. Provides routes 
 linkedin.js | Configures the LinkedIn strategy for use by Passport. Provides routes for LinkedIn authentication.
 twitter.js | Configures the Twitter strategy for use by Passport. Provides routes for Twitter authentication.
 oauth.js | Configuration of API and Secret keys of the providers.
-views/xxxx.jade | Contains the jade view files for different scenarios.
+views/ | Contains the jade view files for different scenarios.
 package.json | All npm packages contain a file, this file holds various metadata relevant to the project.
 
 
