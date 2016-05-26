@@ -27,9 +27,9 @@ package.json | All npm packages contain a file, this file holds various metadata
 - app.js provides three routes
 
       ```
-          1. '/login' to show the provider options to login, '/account'
-          2. '/account' to show some profile information after login to any provider
-          3. '/logout' to terminate an existing login session and redirect to login page.
+       1. '/login' to show the provider options to login, '/account'
+       2. '/account' to show some profile information after login to any provider
+       3. '/logout' to terminate an existing login session and redirect to login page.
       ```
 
 - After all configuration is done, start the application and try 'YOUR_DOMAIN_NAME'/login in the browser.
