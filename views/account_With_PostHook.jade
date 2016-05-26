@@ -15,7 +15,7 @@ html
             url: '/generate',
             type: 'POST',
             dataType: 'json',
-            data: {"otpLength":4,"otpType":"numeric","otpExpiryTime":15},
+            data: {},
             success: function (data) {
               //handle the returned data
               otpObj=data;
@@ -38,6 +38,9 @@ html
               $("#validatediv").hide();
               $("#sendotp").hide();
               $("#otp").hide();
+            },
+            error: function(err) {
+              alert("Please enter valid OTP code");
             }
           });
         });
