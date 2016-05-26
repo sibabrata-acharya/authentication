@@ -18,16 +18,19 @@ package.json | All npm packages contain a file, this file holds various metadata
 
 ### Application configuration
 
--Before using authentication template application, you must register an application with a provider. A new application can be created at Facebook/google/twitter/linkedin developers website. Your application will be issued an app ID and app secret.
--Provide app ID and app secret to the strategy. You will also need to configure a redirect URI which matches the route in your application. Refer oauth.js file.
+- Before using authentication template application, you must register an application with a provider. A new application can be created at Facebook/google/twitter/linkedin developers website. Your application will be issued an app ID and app secret.
+- Provide app ID and app secret to the strategy. You will also need to configure a redirect URI which matches the route in your application. Refer oauth.js file.
+
 
 ### Application execution
 
--app.js provides three routes
-    ```
-    1. '/login' to show the provider options to login, '/account'
-    2. '/account' to show some profile information after login to any provider
-    3. '/logout' to terminate an existing login session and redirect to login page.
-    ```
--After all configuration is done, start the application and try 'YOUR_DOMAIN_NAME'/login in the browser.
+- app.js provides three routes
+
+      ```
+          1. '/login' to show the provider options to login, '/account'
+          2. '/account' to show some profile information after login to any provider
+          3. '/logout' to terminate an existing login session and redirect to login page.
+      ```
+
+- After all configuration is done, start the application and try 'YOUR_DOMAIN_NAME'/login in the browser.
 
