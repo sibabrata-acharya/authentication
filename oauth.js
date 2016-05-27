@@ -26,8 +26,8 @@ var ids = {
         callbackURL: "YOUR_DOMAIN/auth/twitter/callback"
     },
     linkedin: {
-        consumerKey: 'YOUR_LINKEDIN_CONSUMERKEY',
-        consumerSecret: 'YOUR_LINKEDIN_CONSUMERSECRET',
+        clientID: 'YOUR_LINKEDIN_CLIENTID',
+        clientSecret: 'YOUR_LINKEDIN_CLIENTSECRET',
         callbackURL: "YOUR_DOMAIN/auth/linkedin/callback"
     }
 };
