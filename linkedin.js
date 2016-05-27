@@ -1,7 +1,7 @@
 // dependencies
 var passport = require('passport');
 var config = require('./oauth.js');
-var LinkedInStrategy = require('passport-linkedin').Strategy;
+var LinkedinStrategy = require('passport-linkedin-oauth2').Strategy;
 
 // Configure the LinkedIn strategy for use by Passport.
 //
@@ -10,18 +10,22 @@ var LinkedInStrategy = require('passport-linkedin').Strategy;
 // behalf, along with the user's profile.  The function must invoke `done`
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
-passport.use(new LinkedInStrategy({
-        consumerKey: config.linkedin.consumerKey,
-        consumerSecret: config.linkedin.consumerSecret,
-        callbackURL: config.linkedin.callbackURL
+passport.use(new LinkedinStrategy({
+        clientID: config.linkedin.clientID,
+        clientSecret: config.linkedin.clientSecret,
+        callbackURL: config.linkedin.callbackURL,
+        //refer linkedin developer site for scope information
+        scope:        [ 'r_basicprofile', 'r_emailaddress'],
+        passReqToCallback: true
     },
-    function(accessToken, refreshToken, profile, done) {
+    function(req, accessToken, refreshToken, profile, done) {
         // In this example, the user's LinkedIn profile is supplied as the user
         // record.  In a production-quality application, the LinkedIn profile should
         // be associated with a user record in the application's database, which
         // allows for account linking and authentication with other identity
         // providers.
         return done(null, profile);
+
     }
 ));
 
@@ -32,7 +36,7 @@ function linkedin(app){
     //   redirecting the user to linkedin.com.  After authorization, LinkedIn will
     //   redirect the user back to this application at /auth/linkedin/callback
     app.get('/auth/linkedin',
-        passport.authenticate('linkedin'),
+        passport.authenticate('linkedin',{ state: 'SOME STATE' }),
         function(req, res){
             // The request will be redirected to LinkedIn for authentication, so this
             // function will not be called.
