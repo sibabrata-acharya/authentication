@@ -52,7 +52,7 @@ app.get('/', function(req, res){
 
 //Login page to show the provider options to login
 app.get('/login', function(req, res){
-    res.render('index', { title: "Oauth Authentication", config: config});
+    res.render('index', { title: "OAuth Authentication", config: config});
 });
 
 //Show some profile information after login to any provider
