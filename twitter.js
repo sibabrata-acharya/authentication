@@ -1,6 +1,6 @@
 // dependencies
 var passport = require('passport');
-var config = require('./oauth.js');
+var config = require('./config.json');
 var TwitterStrategy = require('passport-twitter').Strategy;
 
 // Configure the Twitter strategy for use by Passport.
@@ -11,8 +11,8 @@ var TwitterStrategy = require('passport-twitter').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new TwitterStrategy({
-        consumerKey: config.twitter.consumerKey,
-        consumerSecret: config.twitter.consumerSecret,
+        consumerKey: config.twitter.clientID,
+        consumerSecret: config.twitter.clientSecret,
         callbackURL: config.twitter.callbackURL
     },
     function(accessToken, refreshToken, profile, done) {
