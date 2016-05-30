@@ -3,7 +3,7 @@ var fs = require('fs');
 var express = require('express');
 var passport = require('passport');
 var path = require('path');
-var config = require('./oauth.js');
+var config = require('./config.json');
 
 var app = express();
 
