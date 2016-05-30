@@ -25,7 +25,7 @@ package.json | All npm packages contain a file, this file holds various metadata
       ```
        clientID: your Provider(facebook/google/twitter/linkedin) application's App ID
        clientSecret: your Provider(facebook/google/twitter/linkedin) application's App Secret
-       callbackURL: URL to which Provider(facebook/google/twitter/linkedin) will redirect the user after granting(eg: http://localhost:3000/auth/facebook/callback)
+       callbackURL: URL to which Provider(facebook/google/twitter/linkedin) will redirect the user after granting authorization(eg: http://localhost:3000/auth/facebook/callback)
       ```
 
 ### Application execution
