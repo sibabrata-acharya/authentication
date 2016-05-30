@@ -22,9 +22,9 @@ package.json | All npm packages contain a file, this file holds various metadata
 - Provide app ID and app secret to the strategy. You will also need to configure a redirect URI(callbackURL) which matches the route in your application. Refer oauth.js file.
 - Configure callbackURL as redirect URI in the provider app configuration. Modify config.json accordingly
       ```
-      clientID: your Provider(facebook/google/twitter/linkedin) application's App ID
-      clientSecret: your Provider(facebook/google/twitter/linkedin) application's App Secret
-      callbackURL: URL to which Provider(facebook/google/twitter/linkedin) will redirect the user after granting(eg: http://localhost:3000/auth/facebook/callback)
+       clientID: your Provider(facebook/google/twitter/linkedin) application's App ID
+       clientSecret: your Provider(facebook/google/twitter/linkedin) application's App Secret
+       callbackURL: URL to which Provider(facebook/google/twitter/linkedin) will redirect the user after granting(eg: http://localhost:3000/auth/facebook/callback)
       ```
 
 ### Application execution
