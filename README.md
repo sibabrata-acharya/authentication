@@ -1,4 +1,4 @@
-# Node JS template application for oAuth2.0 authentication.
+# Node JS template application for OAuth2.0 authentication.
 
 ## Developer can leverage this template application code, modify according to their business functionality and can push to PaaS platform.
 
@@ -20,7 +20,12 @@ package.json | All npm packages contain a file, this file holds various metadata
 
 - Before using authentication template application, you must register an application with a provider. A new application can be created at Facebook/google/twitter/linkedin developers website. Your application will be issued an app ID and app secret.
 - Provide app ID and app secret to the strategy. You will also need to configure a redirect URI(callbackURL) which matches the route in your application. Refer oauth.js file.
-
+- Configure callbackURL as redirect URI in the provider app configuration. Modify config.json accordingly
+      ```
+      clientID: your Provider(facebook/google/twitter/linkedin) application's App ID
+      clientSecret: your Provider(facebook/google/twitter/linkedin) application's App Secret
+      callbackURL: URL to which Provider(facebook/google/twitter/linkedin) will redirect the user after granting(eg: http://localhost:3000/auth/facebook/callback)
+      ```
 
 ### Application execution
 
