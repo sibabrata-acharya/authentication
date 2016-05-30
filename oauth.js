@@ -15,22 +15,22 @@ var ids = {
     facebook: {
         clientID: 'YOUR_FACEBOOK_CLIENTID',
         clientSecret: 'YOUR_FACEBOOK_CLIENTSECRET',
-        callbackURL: 'YOUR_DOMAIN/auth/facebook/callback'
+        callbackURL: 'YOUR_DOMAIN_URL/auth/facebook/callback'
     },
     google: {
         clientID: 'YOUR_GOOGLE_CLIENTID',
         clientSecret: 'YOUR_GOOGLE_CLIENTSECRET',
-        callbackURL: 'YOUR_DOMAIN/auth/google/callback'
+        callbackURL: 'YOUR_DOMAIN_URL/auth/google/callback'
     },
     twitter: {
         consumerKey: 'YOUR_TWITTER_CONSUMERKEY',
         consumerSecret: 'YOUR_TWITTER_CONSUMERSECRET',
-        callbackURL: "YOUR_DOMAIN/auth/twitter/callback"
+        callbackURL: "YOUR_DOMAIN_URL/auth/twitter/callback"
     },
     linkedin: {
         clientID: 'YOUR_LINKEDIN_CLIENTID',
         clientSecret: 'YOUR_LINKEDIN_CLIENTSECRET',
-        callbackURL: "YOUR_DOMAIN/auth/linkedin/callback"
+        callbackURL: "YOUR_DOMAIN_URL/auth/linkedin/callback"
     }
 };
 
