@@ -2,7 +2,9 @@
  Before using authentication template application, you must register an application with a provider.
  If you have not already done so, a new application can be created at Facebook/google/twitter/linkedin Developers.
  Your application will be issued an app ID and app secret, which need to be provided to the strategy.
- You will also need to configure a redirect URI which matches the route in your application.
+ You will also need to configure a redirect URI(callbackURL) which matches the route in your application.
+ 
+ Configure callbackURL as redirect URI in the provider app configuration
 
 *   - `clientID|consumerKey`          - your Provider(facebook/google/twitter/linkedin) application's App ID
 *   - `clientSecret|consumerSecret`   - your Provider(facebook/google/twitter/linkedin) application's App Secret
