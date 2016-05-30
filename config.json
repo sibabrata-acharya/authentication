@@ -15,8 +15,8 @@
     "callbackURL": "YOUR_DOMAIN_URL/auth/twitter/callback"
   },
   "linkedin": {
-    "consumerKey": "YOUR_LINKEDIN_CLIENTID",
-    "consumerSecret": "YOUR_LINKEDIN_CLIENTSECRET",
+    "clientID": "YOUR_LINKEDIN_CLIENTID",
+    "clientSecret": "YOUR_LINKEDIN_CLIENTSECRET",
     "callbackURL": "YOUR_DOMAIN_URL/auth/linkedin/callback"
   }
 }
