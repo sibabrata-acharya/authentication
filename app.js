@@ -27,18 +27,6 @@ app.configure(function() {
 });
 
 
-//Initiate provider configuration and routes.
-var facebook = require('./facebook');
-var google = require('./google');
-var linkedin = require('./linkedin');
-var twitter = require('./twitter');
-
-new facebook(app);
-new google(app);
-new linkedin(app);
-new twitter(app);
-
-
 // Configure Passport authenticated session persistence.
 //
 // In order to restore authentication state across HTTP requests, Passport needs
@@ -58,6 +46,10 @@ passport.deserializeUser(function(obj, cb) {
 
 
 // routes
+app.get('/', function(req, res){
+    res.redirect('/login');
+});
+
 //Login page to show the provider options to login
 app.get('/login', function(req, res){
     res.render('index', { title: "Oauth Authentication", config: config});
@@ -89,3 +81,14 @@ var port = process.env.VCAP_APP_PORT || 3000;
 app.listen(port);
 
 module.exports = app;
+
+//Initiate provider configuration and routes.
+var facebook = require('./facebook');
+var google = require('./google');
+var linkedin = require('./linkedin');
+var twitter = require('./twitter');
+
+new facebook(app);
+new google(app);
+new linkedin(app);
+new twitter(app);
