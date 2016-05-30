@@ -1,6 +1,6 @@
 // dependencies
 var passport = require('passport');
-var config = require('./oauth.js');
+var config = require('./config.json');
 var GoogleStrategy = require('passport-google-oauth2').Strategy;
 
 // Configure the Google strategy for use by Passport.
