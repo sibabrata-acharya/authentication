@@ -1,6 +1,6 @@
 // dependencies
 var passport = require('passport');
-var config = require('./oauth.js');
+var config = require('./config.json');
 var LinkedinStrategy = require('passport-linkedin-oauth2').Strategy;
 
 // Configure the LinkedIn strategy for use by Passport.
