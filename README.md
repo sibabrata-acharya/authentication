@@ -19,7 +19,7 @@ package.json | All npm packages contain a file, this file holds various metadata
 ### Application configuration
 
 - Before using authentication template application, you must register an application with a provider. A new application can be created at Facebook/google/twitter/linkedin developers website. Your application will be issued an app ID and app secret.
-- Provide app ID and app secret to the strategy. You will also need to configure a redirect URI which matches the route in your application. Refer oauth.js file.
+- Provide app ID and app secret to the strategy. You will also need to configure a redirect URI(callbackURL) which matches the route in your application. Refer oauth.js file.
 
 
 ### Application execution
