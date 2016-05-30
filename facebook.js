@@ -1,7 +1,7 @@
 // dependencies
 var FacebookStrategy = require('passport-facebook').Strategy;
 var passport = require('passport');
-var config = require('./oauth.js');
+var config = require('./config.json');
 
 // Configure the Facebook strategy for use by Passport.
 //
