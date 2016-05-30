@@ -32,5 +32,5 @@ package.json | All npm packages contain a file, this file holds various metadata
        3. '/logout' to terminate an existing login session and redirect to login page.
       ```
 
-- After all configuration is done, start the application and try 'YOUR_DOMAIN_NAME'/login in the browser.
+- After all configuration is done, start the application and try 'YOUR_DOMAIN_URL' or 'YOUR_DOMAIN_URL'/login in the browser. For eg: http://localhost:3000/login or http://localhost:3000/
 
